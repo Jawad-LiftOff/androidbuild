@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.dialsapp.hybrid" version="1.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <preference name="loglevel" value="DEBUG" />
+    <icon density="mdpi" src="images/icon/icon-mdpi.png" />
+    <icon density="hdpi" src="images/icon/icon-hdpi.png" />
+    <icon density="xhdpi" src="images/icon/icon-xhdpi.png" />
+    <icon density="xxhdpi" src="images/icon/icon-xxhdpi.png" />
+    <icon density="xxxhdpi" src="images/icon/icon-xxxhdpi.png" />
+    <splash density="port-ldpi" src="images/splash/ldpi.png" />
+    <splash density="port-mdpi" src="images/splash/mdpi.png" />
+    <splash density="port-hdpi" src="images/splash/hdpi.png" />
+    <splash density="port-xxhdpi" src="images/splash/xxdpi.png" />
+    <splash density="port-xhdpi" src="images/splash/xhdpi.png" />
+    <splash density="port-xxxhdpi" src="images/splash/xxxdpi.png" />
+    <name>Oddball</name>
+    <description>
+        A Dials project.
+    </description>
+    <author email="jawad@liftoffllc.com">
+      LIFTOFF TEAM
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="16" />
+    <preference name="BackupWebStorage" value="none" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="3000" />
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarBackgroundColor" value="#000000" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <preference name="FadeSplashScreen" value="true" />
+    <preference name="FadeSplashScreenDuration" value="1.5" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="SuppressesIncrementalRendering" value="true" />
+    <feature name="Keyboard">
+        <param name="android-package" value="com.ionic.keyboard.IonicKeyboard" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="DatePickerPlugin">
+        <param name="android-package" value="com.plugin.datepicker.DatePickerPlugin" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="Globalization">
+        <param name="android-package" value="org.apache.cordova.globalization.Globalization" />
+    </feature>
+    <feature name="UniversalAnalytics">
+        <param name="android-package" value="com.danielcwilson.plugins.analytics.UniversalAnalyticsPlugin" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="NetworkStatus">
+        <param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+</widget>

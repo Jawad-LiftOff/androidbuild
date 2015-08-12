@@ -1,0 +1,10 @@
+<div class="circle-content event">
+      <div class="circle-content-inner event">
+        <div class="host-details event">
+          <h3 class="clock-host-name event">{{ ::$parent.selectedEvent.artist_name}}</h3>
+          <p class="clock-host-time event">{{ ::$parent.selectedEvent.start_time | date : 'hh:mma' }} > {{ ::$parent.selectedEvent.end_time | date : 'hh:mma'}}</p>
+        </div>
+
+        <!-- <img src="img/event-host.png" alt="" class="host-clock-img event"> -->
+    </div>
+  </div>

@@ -1,0 +1,26 @@
+<ion-view>
+  <ion-nav-title>
+      <div class='h1 title text-white header-date' ng-click='resetDate(currentDate, true)'>
+        <span>{{header.day}}</span>
+        <span>{{header.monthName}}</span>
+        <span>{{header.date}}</span>
+        </div>
+  </ion-nav-title>
+  <ion-content id="content" class="app-bg" scroll="false" ng-click="onViewClick(false, $event)">
+    <div class="event-logo" id="eventLogo">
+      <img src="img/oddball-logo.png" alt="">
+    </div>
+    <div class="{{ fadeInMainView ? 'fade-in' : 'fade-out' }}" ng-include src="contentFilePath"></div>
+  </ion-content>
+  <ion-footer-bar>
+    <ion-slide-box show-pager="false">
+      <ion-slide ng-repeat="week in weekArray">
+        <span ng-repeat="day in week" class="box" ng-class="{'bold': day.isSelected, 'bold-current' : day.isCurrentDate}" ng-click="resetDate(day);">
+          <span class="cal-day">{{ day.day }}</span>
+          <span class="cal-date">{{ day.date }}</span>
+          <span class="red-dot" ng-if="day.hasEvent"></span>
+        </span>
+      </ion-slide>
+    </ion-slide-box>
+  </ion-footer-bar>
+</ion-view>

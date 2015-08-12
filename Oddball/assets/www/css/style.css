@@ -1,0 +1,504 @@
+@font-face {
+  font-family: "ProximaNova";
+  src: url("fonts/ProximaNovaRegular.otf") format("opentype"), url("fonts/ProximaNovaRegular.ttf") format("truetype"); }
+@font-face {
+  font-family: "ProximaNovaSemiBold";
+  src: url("fonts/ProximaNovaSemiBold.otf") format("opentype"), url("fonts/ProximaNovaRegular.ttf") format("truetype"); }
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url("fonts/ProximaNovaBold.otf") format("opentype"), url("fonts/ProximaNovaRegular.ttf") format("truetype"); }
+body {
+  font-family: "ProximaNova", Helvetica, Arial, sans-serif; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.clearfix:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1; }
+
+.text-white {
+  color: #ffffff !important; }
+
+.uppercase {
+  text-transform: uppercase !important; }
+
+.square {
+  height: auto;
+  margin: auto;
+  position: relative;
+  width: 100%; }
+
+.clock-face {
+  stroke: #333;
+  fill: transparent; }
+
+.clock-inner {
+  fill: transparent;
+  stroke: #423e3b;
+  stroke-width: 2; }
+
+.clock-cal-content {
+  stroke: #000;
+  stroke-width: 1; }
+
+.minor {
+  stroke: #403c39;
+  stroke-width: 0.5; }
+
+.major {
+  stroke: #44413a;
+  stroke-width: 0.8; }
+
+.hour {
+  stroke: #d40008; }
+
+.circle-content {
+  background: transparent none repeat scroll 0 0;
+  border: 0 none;
+  border-radius: 50%;
+  box-sizing: border-box;
+  height: 50vw;
+  left: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  width: 50vw;
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.circle-content-inner {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+
+.host-bg {
+  border-radius: 50%;
+  box-sizing: border-box;
+  height: 50vw;
+  overflow: hidden;
+  top: 50vw;
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 50%; }
+
+.event-logo {
+  display: block;
+  margin: auto;
+  text-align: center; }
+
+.event-clock-logo {
+  display: block;
+  height: 30%;
+  margin: auto;
+  padding: 0px 0 0;
+  text-align: center; }
+  .event-clock-logo img {
+    width: 75%; }
+
+/***** Time Box *****/
+.time-box {
+  box-shadow: 0 0 5px #666;
+  height: 37%;
+  margin: 5px 0;
+  padding: 7px 0;
+  position: relative; }
+
+.time-box-inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.host-name, .no-event {
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase; }
+
+.no-event {
+  font-size: 10px;
+  line-height: 1.2; }
+
+.time-remaining {
+  color: #888;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 1;
+  margin: 0;
+  text-align: center; }
+
+.clock-dials-logo {
+  display: block;
+  margin: auto;
+  height: 30%;
+  text-align: center; }
+  .clock-dials-logo img {
+    width: 25%; }
+
+/* Empty. Add your own CSS if you like */
+.doBlur {
+  -webkit-filter: blur(3px);
+  -moz-filter: blur(3px);
+  -ms-filter: blur(3px);
+  -o-filter: blur(3px);
+  filter: blur(3px); }
+
+.pane, .view {
+  background: transparent url("../img/oddball-bg.jpg") no-repeat scroll 0 0/cover; }
+
+.app-logo {
+  width: 200px;
+  display: block;
+  margin: auto; }
+
+.time-clock {
+  cursor: pointer; }
+
+.popup-head {
+  border: 0; }
+
+.popup-container .popup {
+  background: transparent; }
+
+.close-popup {
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 5px; }
+
+.bigSize {
+  font-size: 24px; }
+
+.red {
+  color: red; }
+
+.bar.bar-gradient {
+  background: rgba(0, 0, 0, 0.8);
+  border: 0; }
+  .bar.bar-gradient .button {
+    color: #fff; }
+
+/***** FOOTER *****/
+.bar-footer {
+  background: transparent;
+  height: 75px; }
+
+.has-footer {
+  bottom: 80px; }
+
+.event-logo {
+  padding: 5px 0 0px; }
+  .event-logo img {
+    width: 65%; }
+
+.footer-cal {
+  overflow: visible;
+  width: 100%; }
+  .footer-cal span {
+    display: block; }
+
+.box {
+  display: inline-block;
+  position: relative;
+  width: 14%; }
+
+.bold .cal-day, .bold .cal-date {
+  color: #ffffff;
+  font-weight: bold; }
+
+.bold-current .cal-day, .bold-current .cal-date {
+  color: yellow; }
+
+.cal-day, .cal-date {
+  color: #000000;
+  display: block;
+  font-weight: normal;
+  margin-bottom: 7px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.cal-date {
+  font-size: 30px; }
+
+.red-dot {
+  bottom: -10px;
+  display: block;
+  line-height: 10px;
+  position: absolute;
+  text-align: center;
+  width: 100%; }
+  .red-dot:before {
+    content: ' \25CF';
+    font-size: 12px;
+    color: #f74836; }
+
+.svg-shadow {
+  -webkit-filter: drop-shadow(2px 1px 2px #333);
+  filter: drop-shadow(2px 1px 2px #333); }
+
+.item {
+  background: transparent;
+  border: 3px solid #000000;
+  color: #ffffff;
+  font-size: 18px;
+  margin-bottom: 10px;
+  padding: 12px 15px; }
+  .item .event-duration {
+    color: #000000;
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 5%;
+    width: 30%; }
+    .item .event-duration.tour-sch {
+      width: 25%; }
+  .item .artist-name {
+    display: inline-block;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 65%; }
+    .item .artist-name .tour-sch {
+      width: 70%; }
+
+.host-clock-img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 75%;
+  -ms-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%); }
+
+.clock-host-name {
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 17%;
+  text-transform: uppercase; }
+
+.clock-host-time {
+  color: #7f7f7f;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0; }
+
+.host-details {
+  margin: auto;
+  padding: 10px 0 5px;
+  text-align: center;
+  width: 86%; }
+
+.header-date span {
+  border-right: 2px solid #4d4d4d;
+  color: #e6e6e6;
+  display: inline-block;
+  line-height: 1;
+  margin-right: 8px;
+  padding-right: 8px;
+  text-transform: uppercase; }
+  .header-date span:last-child {
+    border-right: 0;
+    margin-right: 0;
+    padding-right: 0; }
+
+.time-arc {
+  height: 100%;
+  -ms-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  width: 100%; }
+
+.canvas-arc {
+  height: auto;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 71%;
+  z-index: -1; }
+
+.menu-icon {
+  background-image: url("../img/menu-icon.png") !important;
+  background-repeat: no-repeat !important;
+  background-size: 26px 20px !important;
+  display: inline-block;
+  height: 20px;
+  margin-top: 5px;
+  width: 26px; }
+
+.menu-icon-circle {
+  background-image: url("../img/circle-icon.svg") !important;
+  background-repeat: no-repeat !important;
+  background-size: 23px 23px !important;
+  display: inline-block;
+  height: 25px;
+  margin-top: 5px;
+  width: 25px; }
+
+.info-icon {
+  background-image: url("../img/icon-info.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  height: 8px;
+  width: 8px; }
+
+.pad-lr {
+  padding: 0 20px; }
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important; }
+
+.list {
+  margin: auto;
+  width: calc(100% - 30px); }
+
+.list-view-tab {
+  border: 3px solid;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: calc(100% - 34px); }
+  .list-view-tab span {
+    float: left;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase; }
+    .list-view-tab span:first-child {
+      border-right: 3px solid; }
+    .list-view-tab span.active {
+      background: #c2c2c2; }
+
+.clock-oddball-logo-svg {
+  padding: 6% 0 4%; }
+  .clock-oddball-logo-svg img {
+    display: block;
+    margin: auto;
+    width: 80%; }
+
+.time-box-svg {
+  -webkit-box-shadow: 0 0 1px #666;
+  -webkit-appearance: none;
+  border-radius: 1px;
+  box-shadow: 0 0 1px #666;
+  margin: 0 0 0 -3%;
+  padding: 0;
+  width: 106%; }
+
+.time-remaining-box {
+  padding: 2px; }
+
+.no-event-box {
+  width: 75%;
+  text-align: center;
+  margin: auto;
+  padding: 5px 0; }
+
+.host-name-svg, .no-event-svg {
+  font-size: 4px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase; }
+
+.time-remaining-svg {
+  color: #888;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+  text-align: center; }
+
+.clock-dials-logo-svg img {
+  display: block;
+  margin: auto;
+  margin-top: 4%;
+  width: 30%; }
+
+.clock-hover-name-block {
+  text-align: center; }
+
+.clock-host-name-svg {
+  color: #000000;
+  font-size: 4px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase; }
+
+.clock-host-time-svg {
+  color: #7f7f7f;
+  font-size: 3px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0; }
+
+.white-bg {
+  background: #ffffff; }
+
+.fade-in {
+  opacity: 1;
+  transition: 0.2s linear all; }
+
+.fade-out {
+  opacity: 0; }
+
+.fz-75 {
+  font-size: 60%; }
+
+.end-of-tour {
+  background: transparent url("../img/end-of-tour-bg.png") no-repeat;
+  background-size: cover; }
+
+.about-wrapper {
+  padding: 15px; }
+  .about-wrapper p {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5; }
+
+.about-dials-logo {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 50%; }
+
+#bar {
+  stroke: #de2027;
+  stroke-width: 3; }
