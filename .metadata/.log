@@ -6907,3 +6907,27 @@ Caused by: java.lang.NullPointerException
 	at com.crashlytics.tools.eclipse.EclipseIde.createAndroidProject(EclipseIde.java:224)
 	... 10 more
 
+
+!ENTRY com.crashlytics.tools.eclipse.core 2 0 2015-08-13 17:35:03.500
+!MESSAGE Could not get key for project AppMe
+Stack trace:
+java.io.IOException: Could parse Android project for: AppMe (not open)
+Could parse Android project for: AppMe (not open)
+java.io.IOException: Could parse Android project for: AppMe (not open)
+	at com.crashlytics.tools.eclipse.EclipseIde.createAndroidProject(EclipseIde.java:228)
+	at com.crashlytics.tools.eclipse.EclipseIde.createAndroidProject(EclipseIde.java:219)
+	at com.crashlytics.tools.eclipse.EclipseIde.createAndroidProject(EclipseIde.java:1)
+	at com.crashlytics.tools.ide.android.AbstractAndroidIde.getApiKey(AbstractAndroidIde.java:131)
+	at com.crashlytics.tools.ide.android.AbstractAndroidIde.updateThenRefreshSDKs(AbstractAndroidIde.java:197)
+	at com.crashlytics.tools.ide.android.AndroidPluginSupport$SDKUpdateBehavior.run(AndroidPluginSupport.java:74)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:471)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:304)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:178)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at com.crashlytics.tools.eclipse.EclipseIde.createAndroidProject(EclipseIde.java:224)
+	... 12 more
+
